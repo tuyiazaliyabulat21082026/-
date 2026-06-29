@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="width=device-width, initial-scale=1.0, noindex">
+    <title>Свадьба Булата и Азалии</title>
+    <style>
+        /* Основные настройки страницы */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white; /* Бордовый фон как на фото */
+            font-family: 'Georgia', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section {
+            width: 100%;
+            max-width: 500px; /* Оптимально для смартфонов */
+            line-height: 0; /* Убирает зазоры между картинками */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Контейнер для формы */
+        .form-section {
+            width: 100%;
+            max-width: 500px;
+            background-color: white;
+            padding: 40px 0;
+            text-align: center;
+            line-height: normal;
+        }
+
+        .form-container {
+            background: #f3ece4; /* Светлый фон внутри формы */
+            margin: 0 20px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #58181f;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .footer {
+            color: #f3ece4;
+            font-size: 0.8em;
+            padding: 20px;
+            opacity: 0.7;
+        }
+        /* Стиль для свадебной кнопки */
+        .wedding-btn {
+            display: inline-block;
+            background-color: #58181f; /* Бордовый цвет */
+            color: #f3ece4; /* Светло-кремовый текст */
+            padding: 15px 35px;
+            font-size: 1.1em;
+            text-decoration: none;
+            font-family: 'Georgia', serif;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+            .wedding-btn:hover {
+                background-color: #7a222b; /* Чуть светлее при наведении */
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+
+            }
+        /* Стиль для кнопки "Вступить в чат" */
+        .chat-btn {
+            display: inline-block;
+            background-color: #2b1f20; /* Цвет как на вашем фото */
+            color: #ffffff; /* Белый текст */
+            padding: 15px 40px;
+            font-size: 1.2em;
+            text-decoration: none;
+            font-family: 'Georgia', serif;
+            border-radius: 12px; /* Прямоугольник со скругленными краями */
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+            .chat-btn:hover {
+                background-color: #4a3335; /* Чуть светлее при наведении */
+                transform: scale(1.03);
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Блок 1: Обложка -->
+    <div class="section">
+        <img src="1.jpg" alt="Булат и Азалия">
+    </div>
+
+    <!-- Блок 2: Тайминг -->
+    <div class="section">
+        <img src="2.jpg" alt="Календарь">
+    </div>
+
+    <!-- Блок 3: Локация -->
+    <div class="section">
+        <img src="3.jpg" alt="Программа">
+    </div>
+
+    <!-- Блок 4: Дресс-код и детали -->
+    <div class="section">
+        <img src="4.jpg" alt="Локация">
+    </div>
+    <div class="form-container" style="background-color: transparent; box-shadow: none;">
+        <a href="https://t.me/+NSsGmcvM_pdkOTdi" target="_blank" class="chat-btn">
+            ЗАГС
+        </a>
+        <a href="https://t.me/+NSsGmcvM_pdkOTdi" target="_blank" class="chat-btn">
+            Ресторан
+        </a>
+    </div>
+    <!-- Блок 5: Призыв к действию -->
+    <div class="section">
+        <img src="5.jpg" alt="Дресс код">
+    </div>
+    <div class="section">
+        <img src="6.jpg" alt="Детали">
+    </div>
+    <div class="section">
+        <img src="7.jpg" alt="Подтвердите участие">
+    </div>
+    <div class="block-wrapper bg-solid-red">
+        <div class="form-container" style="background-color: transparent; box-shadow: none;">
+            <a href="https://t.me/+NSsGmcvM_pdkOTdi" target="_blank" class="chat-btn">
+                Вступить в чат
+            </a>
+        </div>
+    </div>
+    <div class="section">
+        <img src="8.jpg" alt="Анкета гостя">
+    </div>
+    <div class="block-wrapper bg-solid-red">
+        <div class="form-container" style="background-color: transparent; box-shadow: none;">
+            <a href="https://forms.yandex.ru/u/6a4142a6902902087768af14/?page=1" target="_blank" class="chat-btn">
+                Заполнить анкету
+            </a>
+        </div>
+    </div>
+    <!-- Блок с таймером -->
+    <div class="block-wrapper bg-light-cream">
+        <div class="form-container" style="background: none; box-shadow: none; padding-bottom: 30px;">
+            <h3 style="color: #58181f; font-weight: normal; font-size: 1.2em; margin-bottom: 20px;">УВИДИМСЯ С ВАМИ ЧЕРЕЗ:</h3>
+            <div id="timer" style="display: flex; justify-content: center; gap: 20px; font-family: 'Georgia', serif; color: #58181f;">
+                <div style="text-align: center;"><div style="font-size: 2em; font-weight: bold;" id="days">00</div><div style="font-size: 0.8em; text-transform: uppercase;" id="daysText">дней</div></div>
+                <div style="text-align: center;"><div style="font-size: 2em; font-weight: bold;" id="hours">00</div><div style="font-size: 0.8em; text-transform: uppercase;" id="hoursText">часов</div></div>
+                <div style="text-align: center;"><div style="font-size: 2em; font-weight: bold;" id="minutes">00</div><div style="font-size: 0.8em; text-transform: uppercase;" id="minutesText">минут</div></div>
+                <div style="text-align: center;"><div style="font-size: 2em; font-weight: bold;" id="seconds">00</div><div style="font-size: 0.8em; text-transform: uppercase;" id="secondsText">секунд</div></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // --- Функция для правильного склонения слов ---
+        function getNounForm(number, forms) {
+            // forms: ['единственное число', 'родительный падеж ед. числа', 'родительный падеж мн. числа']
+            // Пример: ['день', 'дня', 'дней']
+            number = Math.abs(number) % 100; // Берем последние две цифры для исключений (11-19)
+            var n1 = number % 10; // Берем последнюю цифру
+
+            if (number > 10 && number < 20) { // Если число 11-19
+                return forms[2]; // Например, "дней", "часов"
+            }
+            if (n1 > 1 && n1 < 5) { // Если оканчивается на 2, 3, 4 (кроме 12-14)
+                return forms[1]; // Например, "дня", "часа"
+            }
+            if (n1 == 1) { // Если оканчивается на 1 (кроме 11)
+                return forms[0]; // Например, "день", "час"
+            }
+            return forms[2]; // Все остальные случаи (0, 5-9)
+        }
+
+        // --- Словарные формы для каждого слова ---
+        const forms = {
+            days: ['день', 'дня', 'дней'],
+            hours: ['час', 'часа', 'часов'],
+            minutes: ['минута', 'минуты', 'минут'],
+            seconds: ['секунда', 'секунды', 'секунд']
+        };
+
+        // --- Укажите точную дату и время вашей свадьбы ---
+        const weddingDate = new Date("August 21, 2026 16:00:00").getTime();
+
+        const timerInterval = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Обновляем числа
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // Обновляем окончания слов
+            document.getElementById("daysText").innerHTML = getNounForm(days, forms.days);
+            document.getElementById("hoursText").innerHTML = getNounForm(hours, forms.hours);
+            document.getElementById("minutesText").innerHTML = getNounForm(minutes, forms.minutes);
+            document.getElementById("secondsText").innerHTML = getNounForm(seconds, forms.seconds);
+
+            if (distance < 0) {
+                clearInterval(timerInterval);
+                document.getElementById("timer").innerHTML = "<h3 style='color: #58181f; font-weight: normal; font-size: 1.2em;'>СВАДЬБА НАЧАЛАСЬ!</h3>";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
